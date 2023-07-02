@@ -3,28 +3,221 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to Alvin.G's Website</title>
+  <title>Land Shop - Buy Your Dream Land</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    /* CSS styles for futuristic look */
     body {
-      background-color: #000;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #774aaf;
       color: #fff;
-      font-family: 'Arial', sans-serif;
+      padding: 1rem;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #fff;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+    nav li {
+      margin-left: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 1rem;
+      background-color: #f9f9f9;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #774aaf;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #555;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #ffd700;
+      color: #fff;
+      font-size: 18px;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 4px;
+      margin-top: 20px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #ffc400;
+    }
+    .features {
+      display: flex;
+      justify-content: space-around;
+      padding: 4rem 0;
+      background-color: #f9f9f9;
+    }
+    .feature {
       text-align: center;
     }
-    h1 {
-      font-size: 48px;
-      margin-top: 100px;
+    .feature img {
+      max-width: 100%;
+      border-radius: 8px;
     }
-    p {
+    .feature h2 {
       font-size: 24px;
-      margin-top: 30px;
+      margin-top: 20px;
+      color: #774aaf;
+    }
+    .feature p {
+      font-size: 16px;
+      color: #555;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    .testimonials {
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+    .testimonial {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    .testimonial img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    .testimonial blockquote {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #555;
+    }
+    .testimonial cite {
+      font-style: italic;
+      color: #555;
+    }
+    footer {
+      background-color: #774aaf;
+      padding: 1rem;
+      color: #fff;
+      text-align: center;
+    }
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    .footer li {
+      margin-left: 20px;
+    }
+    .footer a {
+      text-decoration: none;
+      color: #fff;
+    }
+        /* CSS styles omitted for brevity */
+    /* Add the following CSS */
+    nav a.active {
+      color: #ffd700;
     }
   </style>
 </head>
 <body>
-  <h1>Hello there, welcome to Alvin.G's website</h1>
-  <p>My projects are still in development, but please stay tuned. I will release some of my projects real soon.</p>
+  <header>
+    <nav>
+      <a href="#" class="logo">Land Shop</a>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Properties</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>Your Logo Here</h1>
+      <p>Explore our wide range of land listings and discover your dream property today.</p>
+      <a href="#" class="btn">View Properties</a>
+    </div>
+  </header>
+  
+  <main>
+    <section class="features">
+      <div class="feature">
+        <img src="primelocations.jpg" alt="Feature 1">
+        <h2>Prime Locations</h2>
+        <p>Discover land in desirable locations with breathtaking views and easy access to amenities.</p>
+      </div>
+      <div class="feature">
+        <img src="varioussizes.jpg" alt="Feature 2">
+        <h2>Various Sizes</h2>
+        <p>Whether you need a small plot or acres of land, we have options to suit your requirements.</p>
+      </div>
+      <div class="feature">
+        <img src="expertassistance.jpeg" alt="Feature 3">
+        <h2>Expert Assistance</h2>
+        <p>Our team of experienced professionals is ready to guide you through the land buying process.</p>
+      </div>
+    </section>
+  
+    <section class="testimonials">
+      <h2>What Our Customers Say</h2>
+      <div class="testimonial">
+        <img src="customer1.jpg" alt="Customer 1">
+        <blockquote>"I found my dream property through Land Shop. The buying process was smooth, and the support was excellent!"</blockquote>
+        <cite>- John Doe</cite>
+      </div>
+      <div class="testimonial">
+        <img src="customer2.jpg" alt="Customer 2">
+        <blockquote>"Highly recommended! Land Shop has an extensive collection of land listings, and their team is knowledgeable and friendly."</blockquote>
+        <cite>- Jane Smith</cite>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2023 Land Shop. All rights reserved.</p>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
